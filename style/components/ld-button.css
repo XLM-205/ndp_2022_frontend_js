@@ -1,0 +1,32 @@
+.ld-button {
+    background-color:  var(--ld-color-primary);
+    color: white;
+    font-size: calc(var(--ld-font-size-base) + 8px);
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+    border-radius: 50px;
+    transition: background-color 0.5s;
+    text-decoration: none;
+}
+
+.ld-button.-small {
+    font-size: calc(var(--ld-font-size-base) + 4px);
+    font-weight: 600;
+    padding: 12px 27px;
+}
+
+.ld-button:hover {
+    background-color: var(--ld-color-primary-light);
+}
+
+.ld-button.-warning {
+    border-color: yellow;
+    color: yellow;
+}
+
+.ld-button.-danger {
+    border-color: red;
+    color: red;
+}

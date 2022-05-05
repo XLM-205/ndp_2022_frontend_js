@@ -1,0 +1,64 @@
+.ld-table {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 28px 0px;
+}
+
+/* TABLE HEAD */
+.ld-table > .head {
+    font-size: calc(var(--ld-font-size-base) + 6px);
+    font-weight: 600;
+    color: var(--ld-color-gray-light);
+}
+
+.ld-table > .head > .row{
+    display: grid;
+    grid-template-columns: 2fr 1fr 200px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+/* TABLE BODY */
+.ld-table > .body{
+
+}
+
+.ld-table > .body > .row{
+    display: grid;
+    grid-template-columns: 2fr 1fr 200px;
+    padding: 28px 32px;
+    border-bottom: 1px solid var(--ld-color-gray-lighter);
+}
+
+.ld-table > .body > .row:last-child{
+    border-bottom: none;
+}
+
+.ld-table > .body > .row > .title-description {
+
+}
+
+.ld-table > .body > .row > .title-description > .title {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.ld-table > .body > .row > .title-description > .description {
+    
+}
+
+.ld-table > .body > .row > .price {
+    font-family: "Roboto", sans-serif; 
+}
+
+.ld-table > .body > .row > .actions {
+    cursor: pointer;
+}
+
+.ld-table > .body > .row > .actions > .edit {
+    color: var(--ld-color-primary);
+}
+
+.ld-table > .body > .row > .actions > .delete {
+    color: var(--ld-color-danger);
+}
